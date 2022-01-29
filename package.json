@@ -19,5 +19,8 @@
   "homepage": "https://github.com/SeraDub/gulp-2022#readme",
   "dependencies": {
     "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "del": "^6.0.0"
   }
 }
