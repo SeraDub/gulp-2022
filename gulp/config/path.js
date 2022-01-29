@@ -9,7 +9,7 @@ export const path = {
 		files: `${buildFolder}/files/`
 	},
 	src:{
-		files :`${srcFolder}/files/**/*.*`,
+		files : `${srcFolder}/files/**/*.*`,
 
 	},
 	watch:{},
