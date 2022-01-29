@@ -1,4 +1,4 @@
-import path, *as nodePart from 'path';
+import  *as nodePart from 'path';
 const rootFolder = nodePart.basename(nodePart.resolve());
 
 const buildFolder =`./dist`;
