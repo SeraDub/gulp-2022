@@ -2,10 +2,13 @@
 import gulp from "gulp";
 //импорт путей
 import { path } from "./gulp/config/path.js";
+//импорт общих плагинов
+import { plugins } from "./gulp/config/plugins.js";
 //передаем значения в глобальную переменную
 global.app = {
 	path:path,
-	gulp:gulp
+	gulp:gulp,
+	plugins:plugins,
 }
 
 //импорт задач
@@ -20,6 +23,5 @@ function watcher(){
 const mainTasks = gulp.parallel(copy, html);
 //построения сценария виполнения задач
 const dev = gulp.series(reset, mainTasks, watcher);
-
 //виполнения сценария по умолчанию
 gulp.task('default',dev);
