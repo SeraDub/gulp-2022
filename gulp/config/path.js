@@ -4,9 +4,14 @@ const rootFolder = nodePart.basename(nodePart.resolve());
 const buildFolder =`./dist`;
 const srcFolder =`./src`;
 
-console path = {
-	builf:{},
-	src:{},
+export const path = {
+	build:{
+		files: `${buildFolder}/files/`
+	},
+	src:{
+		files :`${srcFolder}/files/**/*.*`,
+
+	},
 	watch:{},
 	clean: buildFolder,
 	srcFolder:srcFolder,
