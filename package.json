@@ -23,6 +23,8 @@
   "devDependencies": {
     "del": "^6.0.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-replace": "^1.1.3",
     "gulp-version-number": "^0.2.4",
     "gulp-webp-html-nosvg": "^1.0.4"
