@@ -23,7 +23,10 @@
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^2.0.0",
@@ -31,6 +34,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-version-number": "^0.2.4",
     "gulp-webp-html-nosvg": "^1.0.4",
-    "sass": "^1.49.0"
+    "gulp-webpcss": "^1.1.1",
+    "sass": "^1.49.0",
+    "webp-converter": "^2.2.3"
   }
 }

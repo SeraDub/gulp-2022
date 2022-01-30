@@ -1,6 +1,1 @@
-body {
-  background-color: #000;
-}
-body span {
-  color: red;
-}
+body{background-color:#000;background:url(@../img/2.png) 0 0 no-repeat}body span{color:red}.webp body{background:url(@../img/2.webp) 0 0 no-repeat}
