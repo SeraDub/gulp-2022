@@ -19,6 +19,7 @@ export const path = {
 		files : `${srcFolder}/files/**/*.*`
 	},
 	clean: buildFolder,
+	buildFolder:buildFolder,
 	srcFolder:srcFolder,
 	rootFolder:rootFolder,
 	ftp:``
