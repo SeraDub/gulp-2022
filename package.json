@@ -21,6 +21,7 @@
     "gulp": "^4.0.2"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-notify": "^4.0.0",
