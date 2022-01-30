@@ -6,5 +6,5 @@ import notify from "gulp-notify";
 export const plugins = {
 	replace:replace,
 	plumber: plumber,
-	nitify: nitify
+	notify: notify
 }

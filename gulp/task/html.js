@@ -10,8 +10,6 @@ export const html = () => {
 				message: "Error: <%= error.message %>"
 			}))
 		)
-
-
 		.pipe(fileinclude())
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))
 		.pipe(webpHtmlNosvg())
