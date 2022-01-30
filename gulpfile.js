@@ -12,8 +12,8 @@ global.app = {
 }
 
 //импорт задач
-import {copy} from "./gulp/task/copy.js.js";
-import {reset} from "./gulp/task/reset.js.js";
+import {copy} from "./gulp/task/copy.js";
+import {reset} from "./gulp/task/reset.js";
 import {html} from "./gulp/task/html.js";
 import { server } from "./gulp/task/server.js;"
 
