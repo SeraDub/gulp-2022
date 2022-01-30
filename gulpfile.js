@@ -12,10 +12,10 @@ global.app = {
 }
 
 //импорт задач
-import {copy} from "./gulp/tasks/copy.js";
-import {reset} from "./gulp/tasks/reset.js";
-import {html} from "./gulp/tasks/html.js";
-import { server } from "./gulp/tasks/server.js;"
+import {copy} from "./gulp/task/copy.js.js";
+import {reset} from "./gulp/task/reset.js.js";
+import {html} from "./gulp/task/html.js";
+import { server } from "./gulp/task/server.js;"
 
 //наблюдатель за изминениями в файлах
 function watcher(){
