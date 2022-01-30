@@ -8,7 +8,7 @@ import { plugins } from "./gulp/config/plugins.js";
 global.app = {
 	path:path,
 	gulp:gulp,
-	plugins:plugins,
+	plugins:plugins
 }
 
 //импорт задач
