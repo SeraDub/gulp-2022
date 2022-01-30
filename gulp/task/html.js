@@ -11,7 +11,7 @@ export const html = () => {
 		.pipe(
 			versionNumber({
 				'value': '%DT%',
-				'appent':{
+				'appent': {
 					'key': '_v',
 					'cover': 0,
 					'to': [
