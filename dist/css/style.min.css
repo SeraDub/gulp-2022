@@ -1,1 +1,1 @@
-body{background-color:#000;background:url(@../img/2.png) 0 0 no-repeat}body span{color:red}.webp body{background:url(@../img/2.webp) 0 0 no-repeat}
+body{background:url(@../img/2.png) 0 0 no-repeat;min-height:100%}.webp body{background:url(@../img/2.webp) 0 0 no-repeat}
