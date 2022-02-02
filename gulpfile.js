@@ -6,6 +6,8 @@ import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js";
 //передаем значения в глобальную переменную
 global.app = {
+	isBuild: process.argv.includes('--build'),
+	isDev: !process.argv.includes('--build'),
 	path:path,
 	gulp:gulp,
 	plugins:plugins
@@ -20,6 +22,7 @@ import { scss } from "./gulp/task/scss.js";
 import { js } from "./gulp/task/js.js";
 import { images } from "./gulp/task/images.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/task/fonts.js";
+import { svgSprive } from "./gulp/task/svgSprive.js";
 
 
 //наблюдатель за изминениями в файлах
@@ -31,11 +34,19 @@ function watcher(){
 	gulp.watch(path.watch.images, images);
 }
 
+export {svgSprive}
+
 // Последовательная обработка шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle );
 //основные задачи
 const mainTasks = gulp.series(fonts, gulp.parallel( copy, html, scss, js, images));
+
+// экспорт сценариев
+export { dev }
+export { build }
+
 //построения сценария виполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel (watcher, server));
+const build = gulp.series(reset, mainTasks);
 //виполнения сценария по умолчанию
 gulp.task('default', dev);
