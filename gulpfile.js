@@ -19,7 +19,7 @@ import { server } from "./gulp/task/server.js";
 import { scss } from "./gulp/task/scss.js";
 import { js } from "./gulp/task/js.js";
 import { images } from "./gulp/task/images.js";
-import { otfToTft, ttfToWoff, fontStyle } from "./gulp/task/fonts.js";
+import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/task/fonts.js";
 
 
 //наблюдатель за изминениями в файлах
@@ -32,7 +32,7 @@ function watcher(){
 }
 
 // Последовательная обработка шрифтов
-const fonts = gulp.series(otfToTft, ttfToWoff, fontStyle );
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle );
 //основные задачи
 const mainTasks = gulp.series(fonts, gulp.parallel( copy, html, scss, js, images));
 //построения сценария виполнения задач
